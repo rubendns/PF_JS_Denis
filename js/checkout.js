@@ -21,8 +21,8 @@ const displayCart = () => {
     cartItems.innerHTML = ""
     cart.forEach((item) => {
         const cartItem = document.createElement("li")
-        cartItem.textContent = `${item.modelo} - $${item.precio}`
-        const deleteButton = document.createElement("button");
+        cartItem.textContent = ` - ${item.modelo} - $${item.precio}    `
+        const deleteButton = document.createElement(id= "delete");
         deleteButton.textContent = "Eliminar";
         deleteButton.addEventListener("click", () => {
             removeFromCart(item.id); 

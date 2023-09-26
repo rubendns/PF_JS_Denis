@@ -65,11 +65,12 @@ const addToCart = (productId) => {
 }
 
 // Funcion por si falla la carga de datos
-function returnError() {
+const returnError = () => {
     return `<div class="card-error">
                 <h2>⛔ Error al cargar los datos ⛔</h2>
-            </div>`
-}
+            </div>`;
+};
+
 // Funciones para redirigir paginas
 const redirectToCheckout = () => {
     window.location.href = "checkout.html"
